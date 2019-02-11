@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#4469B0" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@id/back"
+            android:textSize="25dp"
+            android:layout_marginBottom="20dp"
+            android:text="牛奶"
+            android:textColor="@color/colorWhite" />
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:tag="empty"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/food"
+            android:src="@drawable/empty_star"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/detail_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="饮品"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/detail_nutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="富含 钙"
+            android:layout_marginTop="8dp"
+            android:layout_alignLeft="@id/detail_type"
+            android:layout_below="@id/detail_type"
+            android:textColor="@color/Detail" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/collect"
+            android:layout_alignTop="@id/collect"
+            android:background="@color/Cut"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:id="@+id/collect"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:src="@drawable/collect"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp" />
+        
+        <View
+            android:id="@+id/rule0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/detail_nutrition"
+            android:background="@color/Cut"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@id/detail_nutrition"
+            android:layout_alignRight="@id/collect"/>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:text="更多资料"
+            android:layout_alignLeft="@id/detail_nutrition"
+            android:layout_below="@id/rule0"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            android:id="@+id/rule1"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@id/info"
+            android:background="@color/Cut" />
+
+        <ListView
+            android:layout_below="@id/rule1"
+            android:id="@+id/detail_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </RelativeLayout>
+</LinearLayout>

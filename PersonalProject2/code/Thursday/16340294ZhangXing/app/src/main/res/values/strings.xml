@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExperimentTwo</string>
+    <string name="platform">中山大学智慧健康服务平台</string>
+    <string name="search">搜索</string>
+    <string name="hint">请输入搜索内容</string>
+    <string name="image">图片</string>
+    <string name="video">视频</string>
+    <string name="question">问答</string>
+    <string name="news">资讯</string>
+    <string name="appwidget_text">当前没有任何信息</string>
+    <string name="add_widget">Add widget</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StorageActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_password"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:hint="@string/new_pass"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="200dp"
+        android:inputType="textPassword" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/new_password"
+        android:id="@+id/confirm_password"
+        android:hint="@string/confirm_pass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm"
+        android:text="@string/confirm"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
+        android:text="@string/clear"
+        app:layout_constraintLeft_toRightOf="@+id/confirm"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
+        android:layout_marginLeft="10dp"/>
+
+</android.support.constraint.ConstraintLayout>

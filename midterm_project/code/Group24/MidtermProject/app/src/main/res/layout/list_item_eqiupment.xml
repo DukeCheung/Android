@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <com.example.aced.CircleImageView
+        android:id="@+id/equipmentImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/wujinzhanren"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equipmentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/equipmentImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:text="无尽战刃"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equipmentPrice"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/equipmentName"
+        app:layout_constraintLeft_toRightOf="@+id/equipmentImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:text="2140"/>
+
+    <TextView
+        android:id="@+id/equipmentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textview_blueborder"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="移动"
+        android:textColor="@color/blue"
+        app:layout_constraintLeft_toRightOf="@+id/equipmentName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equipmentDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="+120% 物理攻击, +20% 暴击率"
+        app:layout_constraintTop_toBottomOf="@+id/equipmentImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/equipmentSkill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="left"
+        app:layout_constraintTop_toBottomOf="@+id/equipmentDescription"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:text="唯一被动"
+        android:ellipsize="end" />
+
+</android.support.constraint.ConstraintLayout>

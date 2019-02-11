@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="equipment">
+        <item>攻击</item>
+        <item>法术</item>
+        <item>防御</item>
+        <item>移动 </item>
+        <item>打野</item>
+        <item>辅助</item>
+    </string-array>
+</resources>

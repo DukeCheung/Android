@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#776771</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPink">#e8bcc9</color>
+
+    <color name="Dark">#000000</color>
+    <color name="Gray">#BEAEAE</color>
+    <color name="Green">#14ec14</color>
+
+    <color name="dark">#180031</color>
+    <color name="pink">#ffacc2</color>
+
+    <color name="CardBackGroundPurple">#9c5fff</color>
+    <color name="CardBackGroundGreen">#eeff55</color>
+    <color name="CardBackGroundRed">#DD4E63</color>
+    <color name="white">#ffffff</color>
+</resources>

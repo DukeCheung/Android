@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="定制我的理想英雄"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/liubangicon"
+            android:id="@+id/heroImage"
+            android:layout_weight="3"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="英雄名称"
+            android:id="@+id/heroName"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp">
+
+            <RadioButton
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="坦克" />
+            <RadioButton
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="法师" />
+            <RadioButton
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="战士" />
+            <RadioButton
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="刺客" />
+            <RadioButton
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="射手" />
+            <RadioButton
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="辅助" />
+
+        </RadioGroup>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="技能名称"
+                android:layout_marginRight="10dp"
+                android:id="@+id/skillNameEdit"
+                android:textSize="17dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="技能位置"
+                android:id="@+id/skillPositionEdit"
+                android:layout_marginRight="10dp"
+                app:layout_constraintLeft_toRightOf="@id/skillNameEdit"
+                android:textSize="17dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="技能冷却"
+                android:id="@+id/skillCoolEdit"
+                android:layout_marginRight="10dp"
+                app:layout_constraintLeft_toRightOf="@id/skillPositionEdit"
+                android:textSize="17dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="技能消耗"
+                android:id="@+id/skillWasteEdit"
+                app:layout_constraintLeft_toRightOf="@id/skillCoolEdit"
+                android:textSize="17dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="技能描述"
+                android:id="@+id/skillDescriptionEdit"
+                app:layout_constraintTop_toBottomOf="@id/skillNameEdit"
+                android:textSize="17dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="技能窍门"
+                android:id="@+id/skillTipEdit"
+                app:layout_constraintTop_toBottomOf="@id/skillDescriptionEdit"
+                android:textSize="17dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加技能"
+            android:id="@+id/addSkillBtn"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/listview_skill"
+            android:layout_weight="3"></ListView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/completeBtn"
+            android:text="完成"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
